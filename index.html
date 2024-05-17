@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/task.css">
+    <link rel="stylesheet" href="css/addTaskModal.css">
+    <script src="https://kit.fontawesome.com/f865c48659.js" crossorigin="anonymous"></script>
+    <title>🌀 TaskFlow 🌀</title>
+</head>
+<body>
+    <header>
+        🔥<span id="streak"></span> 
+    </header>
+    <button id="add-btn">+</button>
+    <form id="add-task-modal">
+        <div><h3>Create a new task</h3> <button type="button" id="close-add-task-btn">x</button></div>
+        <label for="name">Name : <input type="text" id="newNameTask"></label>
+        <label for="time">Hour : <input type="time" name="time" id="newHourTask"></label>
+        <label for="color">Color : <input type="color" name="color" id="newColorTask" value="#fff"></label>
+        <button type="submit">Add task</button>
+    </form>
+    <main id="task-container">
+        
+    </main>
+</body>
+<script src="script/Task.js"></script>
+<script src="script/AddTask.js"></script>
+<script src="script/StorageManager.js"></script>
+<script src="script/DateManager.js"></script>
+<script src="script/StreakManager.js"></script>
+<script src="script/app.js"></script>
+</html>

@@ -1,0 +1,47 @@
+#add-btn {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    width: 50%;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+#add-task-modal {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--task-backgroud-color);
+    border: 2px solid #fff;
+    color: #fff;
+    width: 80%;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: .4em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#add-task-modal label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-task-modal input {
+    width: 250px;
+    box-sizing: border-box;
+    border-radius: .4em;
+}
+
+#add-task-modal div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close-add-task-btn {
+    width: 30px;
+    height: 30px;
+}
