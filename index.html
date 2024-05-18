@@ -15,10 +15,10 @@
     </header>
     <button id="add-btn">+</button>
     <form id="add-task-modal">
-        <div><h3>Create a new task</h3> <button type="button" id="close-add-task-btn">x</button></div>
-        <label for="name">Name : <input type="text" id="newNameTask"></label>
-        <label for="time">Hour : <input type="time" name="time" id="newHourTask"></label>
-        <label for="color">Color : <input type="color" name="color" id="newColorTask" value="#fff"></label>
+        <div class="header"><h3>Create a new task</h3> <button type="button" id="close-add-task-btn"><i class="fa-solid fa-xmark"></i></button></div>
+        <label for="name"><input type="text" id="newNameTask" placeholder="Name"></label>
+        <label for="time"><input type="time" name="time" id="newHourTask"></label>
+        <label for="color"><input type="color" name="color" id="newColorTask"></label>
         <button type="submit">Add task</button>
     </form>
     <main id="task-container">

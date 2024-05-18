@@ -1,8 +1,6 @@
 #add-btn {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 80px;
+    margin: auto;
+    margin-top: 80px;
     width: 50%;
     height: 50px;
     font-size: 1.5em;
@@ -21,18 +19,34 @@
     padding-top: 10px;
     border-radius: .4em;
     left: 50%;
+    top: 25%;
+    padding-top: 60px;
     transform: translateX(-50%);
 }
 
-#add-task-modal label {
-    display: flex;
-    justify-content: space-between;
+#add-task-modal .header {
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    padding-left: 20px;
+    top: 0;
+    left: 0;
+    color: #000;
+    border: 2px solid #fff;
 }
 
 #add-task-modal input {
-    width: 250px;
+    width: 100%;
     box-sizing: border-box;
-    border-radius: .4em;
+    padding: 5px;
+    background: #222;
+    border: none;
+    border-bottom: 2px solid#fff;
+    color: #fff;
+}
+
+#add-task-modal input[type="color"] {
+    height: 50px;
 }
 
 #add-task-modal div {
@@ -41,7 +55,22 @@
     align-items: center;
 }
 
+#add-task-modal button[type="submit"] {
+    width: max-content;
+    padding: 10px 50px;
+    margin: auto;
+}
+
 #close-add-task-btn {
     width: 30px;
     height: 30px;
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 1.3em;
+}
+
+#close-add-task-btn:hover {
+    transform: scale(1.4);
+    transition: transform .4s;
 }
